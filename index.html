@@ -5,95 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Charity:Water Landing Page</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Helvetica Neue', sans-serif;
       background: #ffffff;
     }
 
     .hero {
       display: flex;
-      flex-wrap: wrap;
-      background-color: #feca30;
-      min-height: 100vh;
-      padding: 40px;
       align-items: center;
       justify-content: space-between;
+      padding: 8vh 8vw;
+      background-color: #feca30;
+      min-height: 100vh;
+      flex-wrap: wrap;
+      gap: 40px;
     }
 
     .hero-text {
-      flex: 1 1 400px;
+      flex: 1;
       max-width: 600px;
     }
 
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      height: 32px;
+    }
+
     .hero-text h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
       color: #333;
     }
 
     .hero-text p {
-      font-size: 1rem;
+      font-size: 1.25rem;
       color: #333;
-      margin-bottom: 30px;
-      line-height: 1.5;
+      line-height: 1.6;
+      margin-bottom: 40px;
     }
 
     .input-container {
       display: flex;
-      max-width: 400px;
+      max-width: 500px;
       background: #fff;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .input-container input {
       flex: 1;
-      padding: 15px;
-      border: none;
+      padding: 18px;
       font-size: 1rem;
+      border: none;
+      outline: none;
     }
 
     .input-container button {
       background: #f47c20;
       color: white;
       border: none;
-      padding: 0 20px;
+      padding: 0 24px;
       font-size: 1rem;
       cursor: pointer;
     }
 
     .hero-image {
-      flex: 1 1 300px;
+      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
     }
 
     .hero-image img {
-      max-width: 100%;
-      border-radius: 8px;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
     }
 
-    .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding-bottom: 20px;
-    }
-
-    .logo img {
-      height: 24px;
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .hero {
         flex-direction: column;
         text-align: center;
+        padding: 60px 20px;
+      }
+
+      .hero-text {
+        align-items: center;
       }
 
       .input-container {
