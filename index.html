@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity:Water Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #ffffff;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #feca30;
+      min-height: 100vh;
+      padding: 40px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      flex: 1 1 400px;
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .input-container {
+      display: flex;
+      max-width: 400px;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .input-container input {
+      flex: 1;
+      padding: 15px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .input-container button {
+      background: #f47c20;
+      color: white;
+      border: none;
+      padding: 0 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero-image {
+      flex: 1 1 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 20px;
+    }
+
+    .logo img {
+      height: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .input-container {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-text">
+      <div class="logo">
+        <img src="https://cdn.discordapp.com/attachments/741476774915080203/1391159600455094433/image.png?ex=686ae1d7&is=68699057&hm=4da5d13c36df500b5e699bfc0445d62e92b49bf35944e2d7917df9910d86f978&" alt="Charity:Water logo">
+        Charity:Water
+      </div>
+      <h1>You Want to See Change. Here’s Where It Starts</h1>
+      <p>At charity: water, every donation is tied to a real project, real people, and real progress. Because your impact should never be invisible.</p>
+      <div class="input-container">
+        <input type="text" placeholder="HELLO IT’S EMMA" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn.discordapp.com/attachments/741476774915080203/1391159451628732548/image.png?ex=686ae1b3&is=68699033&hm=98a2d6bfe70873353befa96a1709a56a0cdb5f53313f18b059229c31e79d1a23&" alt="Smiling child with clean water" />
+    </div>
+  </div>
+
+</body>
+</html>
